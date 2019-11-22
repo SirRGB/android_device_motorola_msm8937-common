@@ -325,9 +325,9 @@ function 8937_sched_dcvs_hmp()
     echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/sampling_down_factor
 
     # Enable sched guided freq control
-    echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
+    echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
     echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
-    echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
+    echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
     echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif
     echo 50000 > /proc/sys/kernel/sched_freq_inc_notify
     echo 50000 > /proc/sys/kernel/sched_freq_dec_notify
