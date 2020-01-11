@@ -390,4 +390,7 @@
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware for individual layers. -->
+    <bool name="config_setColorTransformAcceleratedPerLayer">true</bool>
 </resources>
