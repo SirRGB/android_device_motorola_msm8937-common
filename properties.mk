@@ -87,6 +87,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Fastboot
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.fm.use_audio_session=true
