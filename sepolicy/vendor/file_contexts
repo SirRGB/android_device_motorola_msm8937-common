@@ -55,3 +55,6 @@
 # Vibrator
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service.msm8937 u:object_r:hal_vibrator_default_exec:s0
 /sys/devices/virtual/timed_output/vibrator/voltage_level u:object_r:sysfs_vibrator:s0
+
+# Device nodes
+/dev/stune(/.*)?                                                                    u:object_r:cgroup:s0
