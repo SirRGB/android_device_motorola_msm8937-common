@@ -43,6 +43,7 @@ on init
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
+on late-init
     # Start services for bootanim
     start surfaceflinger
     start bootanim
