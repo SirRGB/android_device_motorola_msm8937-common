@@ -139,7 +139,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     ro.vendor.qti.sys.fw.bservice_limit=5 \
-    ro.vendor.qti.sys.fw.bservice_age=5000
+    ro.vendor.qti.sys.fw.bservice_age=5000 \
+    persist.device_config.runtime_native.usap_pool_enabled=true \
+    persist.device_config.runtime_native.usap_pool_size_max=5
+
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
