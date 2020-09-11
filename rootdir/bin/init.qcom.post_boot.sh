@@ -3536,6 +3536,7 @@ case "$target" in
             echo 30 > $npullccbw/bw_hwmon/down_thres
             echo 0 > $npullccbw/bw_hwmon/guard_band_mbps
             echo 250 > $npullccbw/bw_hwmon/up_scale
+            echo 40 > $npullccbw/polling_interval
             echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
 	done
 
