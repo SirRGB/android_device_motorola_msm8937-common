@@ -46,13 +46,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=smd
 
-# Bpf bypass
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kernel.ebpf.supported=false
-
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
+
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
