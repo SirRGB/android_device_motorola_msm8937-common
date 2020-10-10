@@ -330,7 +330,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh
+    init.qcom.sh \
+    init.safailnet.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
