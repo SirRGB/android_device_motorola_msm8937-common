@@ -1,3 +1,6 @@
 dontaudit vendor_qti_init_shell self:capability dac_override;
 allow vendor_qti_init_shell kmsg_device:chr_file { open write };
 allow vendor_qti_init_shell system_data_file:file { getattr read };
+
+allow qti_init_shell ctl_start_prop:property_service set;
+allow qti_init_shell ctl_stop_prop:property_service set;
