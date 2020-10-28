@@ -249,3 +249,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # XML format
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
+
+# Zygote
+zygote.critical_window.minute=10
