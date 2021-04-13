@@ -141,6 +141,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.supports_background_blur=0
 
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.readahead.enable=false \
+    iorapd.perfetto.enable=false \
+    ro.iorapd.enable=false
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mm.enable.qcom_parser=4643 \
