@@ -126,6 +126,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=0 \
     debug.renderengine.backend=threaded
 
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.readahead.enable=false \
+    iorapd.perfetto.enable=false \
+    ro.iorapd.enable=false
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mm.enable.qcom_parser=4643 \
@@ -141,7 +147,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_age=5000 \
     persist.device_config.runtime_native.usap_pool_enabled=true \
     persist.device_config.runtime_native.usap_pool_size_max=5
-
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -194,7 +199,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ril.subscription.types=NV,RUIM \
-    telephony.lteOnCdmaDevice=1 \
+    telephony.lteOnCdmaDevice=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
