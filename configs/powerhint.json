@@ -86,24 +86,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "GPUBusMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,gpubw/min_freq",
-      "Values": [
-        "7031",
-        "6152",
-        "5712",
-        "5346",
-        "4248",
-        "4101",
-        "2929",
-        "2124",
-        "1611",
-        "769",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "GPUForceRailOn",
       "Path": "/sys/class/kgsl/kgsl-3d0/force_rail_on",
       "Values": [
@@ -212,9 +194,7 @@
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
-        "VR_SUSTAINED_PERFORMANCE",
         "SUSTAINED_PERFORMANCE",
-        "VR",
         ""
       ],
       "Type": "Property"
@@ -271,114 +251,6 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "475000000"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "PowerHALMainState",
-      "Duration": 0,
-      "Value": "VR"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "ThermalMode",
-      "Duration": 0,
-      "Value": "-vr"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1497600"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 58,
-      "Value": "1497600"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1209600"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "1209600"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "375000000"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "375000000"
-    },
-    {
-      "PowerHint": "VR",
-      "Node": "GPUBusMinFreq",
-      "Duration": 0,
-      "Value": "4248"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "PowerHALMainState",
-      "Duration": 0,
-      "Value": "VR_SUSTAINED_PERFORMANCE"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "ThermalMode",
-      "Duration": 0,
-      "Value": "-vr"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1248000"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 0,
-      "Value": "1248000"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1209600"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "1209600"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "375000000"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "375000000"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "GPUBusMinFreq",
-      "Duration": 0,
-      "Value": "4248"
     },
     {
       "PowerHint": "INTERACTION",
@@ -487,48 +359,6 @@
       "Node": "GPUIdleTimer",
       "Duration": 5000,
       "Value": "10000"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 1000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 1000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 1000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1000,
-      "Value": "67"
-    },
-    {
-      "PowerHint": "CAMERA_STREAMING_MID",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1497600"
-    },
-    {
-      "PowerHint": "CAMERA_STREAMING_HIGH",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1497600"
-    },
-    {
-      "PowerHint": "CAMERA_STREAMING_HIGH",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "450000000"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
