@@ -250,6 +250,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
+# WiFi Scan Interval (default = 15s)
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.supplicant_scan_interval=120
+
 # XML format
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
