@@ -355,6 +355,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+# Trebuchet overlay
+PRODUCT_PACKAGES += \
+    TrebuchetGoOverlay
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
