@@ -456,7 +456,6 @@ product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/ipacm-diag
-vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qmi_motext_hook
 vendor/bin/rmt_storage
@@ -515,6 +514,10 @@ vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
+
+
+# RIL - from X00RD  - QKQ1.191002.002-17.07.2003.405-20200330
+vendor/bin/netmgrd|a64d8bb049c1dcdb846d9bcee7bd58ff024fe30b
 
 # Sensors
 vendor/bin/capsense_reset
