@@ -316,6 +316,12 @@
         <item>25</item>
     </integer-array>
 
+    <!-- Disable rounded corners -->
+    <dimen name="config_dialogCornerRadius">0.0dip</dimen>
+    <dimen name="config_buttonCornerRadius">0.0dip</dimen>
+    <dimen name="rounded_corner_radius">0dp</dimen>
+    <dimen name="config_progressBarCornerRadius">0.0dip</dimen>
+
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
