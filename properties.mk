@@ -188,6 +188,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sensors.pedometer=false
 
+# SOC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8937
+
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.use_trim_settings=true \
