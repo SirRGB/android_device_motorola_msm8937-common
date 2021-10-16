@@ -1,1 +1,2 @@
 allow wcnss_service sysfs:file rw_file_perms;
+dontaudit wcnss_service system_prop:file read;
