@@ -3,3 +3,8 @@ hal_client_domain(hal_camera_default, hal_graphics_allocator)
 allow hal_camera_default sysfs_camera_device:file { open read getattr };
 allow hal_camera_default sysfs_battery_supply:dir search;
 allow hal_camera_default sysfs_battery_supply:file { open read getattr };
+
+get_prop(hal_camera_default, bootanim_system_prop)
+get_prop(hal_camera_default, camera_prop)
+dontaudit hal_camera_default persist_debug_prop:file read;
+dontaudit hal_camera_default radio_prop:file read;
