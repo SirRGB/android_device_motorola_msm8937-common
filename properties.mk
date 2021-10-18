@@ -225,3 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# XML format
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
