@@ -31,6 +31,12 @@ function blob_fixup() {
             sed -i "s|/system/product/framework/|/system_ext/framework/|g" "${2}"
             ;;
 
+        system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so)
+            for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
+            done
+            ;;
+
         # memset shim
         vendor/bin/charge_only_mode)
             for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
@@ -48,6 +54,12 @@ function blob_fixup() {
 
         vendor/lib64/hw/keystore.msm8937.so)
             "${PATCHELF}" --set-soname keystore.msm8937.so "${2}"
+            ;;
+
+        vendor/lib/libmot_gpu_mapper.so)
+            for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
+            done
             ;;
 
         vendor/lib/libmot_gpu_mapper.so | vendor/lib/libmmcamera_vstab_module.so)
