@@ -518,8 +518,6 @@ vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 # Sensors
 vendor/bin/capsense_reset
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|b3d9be075b7d7e896e0086e90baacc602445258b
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|24e17b4c9f237b51e89fae26adc7cc573493514d
 
 # Thermal
 vendor/bin/thermal-engine
