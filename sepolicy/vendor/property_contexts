@@ -1,3 +1,5 @@
+vendor.net.qmi.rev_ip_info u:object_r:vendor_radio_prop:s0
+
 # Camera
 camera. u:object_r:camera_prop:s0
 cameradaemon. u:object_r:camera_prop:s0
