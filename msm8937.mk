@@ -105,15 +105,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
 
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
-
 # Filesystem
 PRODUCT_PACKAGES += \
     fs_config_files
