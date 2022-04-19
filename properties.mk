@@ -167,7 +167,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.qti.sys.fw.bg_apps_limit=60 \
-    ro.vendor.perf.scroll_opt=true
+    ro.vendor.perf.scroll_opt=true \
+    ro.qualcomm.perf.cores_online=8
 
 # Qualcomm
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
