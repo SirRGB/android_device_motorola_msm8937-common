@@ -140,6 +140,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=0 \
     debug.renderengine.backend=threaded
 
+# Hardware
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mm.enable.qcom_parser=4643 \
