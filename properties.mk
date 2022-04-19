@@ -142,6 +142,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=0 \
     debug.renderengine.backend=threaded
 
+# Hardware
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno
+
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
     iorapd.readahead.enable=false \
