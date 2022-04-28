@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     libbson.vendor \
@@ -116,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1
+    android.hardware.biometrics.fingerprint@2.1.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -208,6 +212,10 @@ ifeq ($(filter %ahannah %rhannah,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     MotoActions
 endif
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
