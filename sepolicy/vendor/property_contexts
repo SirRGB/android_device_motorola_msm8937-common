@@ -1,6 +1,8 @@
 vendor.net.qmi.rev_ip_info u:object_r:vendor_radio_prop:s0
 
 wifi.active.interface      u:object_r:wifi_hal_prop:s0
+vendor.wlan.driver.ath      u:object_r:vendor_wifi_prop:s0
+vendor.wlan.driver.config	u:object_r:vendor_wifi_prop:s0
 
 # Camera
 camera. u:object_r:camera_prop:s0
