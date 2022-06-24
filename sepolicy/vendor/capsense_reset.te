@@ -8,3 +8,13 @@ allow capsense_reset sysfs_capsense:dir r_dir_perms;
 allow capsense_reset sysfs_capsense:file rw_file_perms;
 
 allow capsense_reset self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# Write to /dev/kmsg
+allow capsense_reset kmsg_device:chr_file rw_file_perms;
+
+allow capsense_reset input_device:dir r_dir_perms;
+allow capsense_reset input_device:chr_file r_file_perms;
+
+allow capsense_reset sysfs_sensor:dir r_dir_perms;
+allow capsense_reset sysfs_sensor:file rw_file_perms;
+allow capsense_reset self:netlink_kobject_uevent_socket { bind create read setopt };
