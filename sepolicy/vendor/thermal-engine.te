@@ -2,4 +2,6 @@ allow thermal-engine thermal_device:chr_file { ioctl };
 r_dir_file(thermal-engine, sysfs)
 r_dir_file(thermal-engine, sysfs_vadc_dev)
 
+get_prop(thermal-engine, vendor_radio_prop)
+
 dontaudit thermal-engine default_prop:file read;
