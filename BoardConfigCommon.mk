@@ -65,9 +65,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
