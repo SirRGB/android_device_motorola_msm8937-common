@@ -113,6 +113,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_split=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.perf_hint_window=50 \
+    vendor.display.disable_rotator_downscale=1 \
     ro.config.avoid_gfx_accel=true \
     ro.vendor.qti.am.reschedule_service=true \
     debug.egl.force_msaa=1 \
