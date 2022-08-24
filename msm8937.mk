@@ -5,6 +5,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/msm8937-common/msm8937-common-vendor.mk)
