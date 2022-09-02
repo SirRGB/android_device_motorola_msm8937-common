@@ -362,7 +362,8 @@ PRODUCT_PACKAGES += \
     libgui_shim_vendor \
     libcutils_shim \
     libmemset_shim \
-    libqsapshim
+    libqsapshim \
+    libshim_xtra-daemon
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
