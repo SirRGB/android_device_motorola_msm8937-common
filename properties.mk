@@ -53,20 +53,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
-    persist.vendor.camera.display.umax=1920x1080 \
-    persist.vendor.camera.display.lmax=1280x720 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
 
-# Charger
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
-
 # CNE
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cnd.iwlan=1 \
-    persist.vendor.cne.logging.qxdm=3974
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
 
@@ -87,26 +77,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3 \
     ro.sys.fw.dex2oat_thread_count=4
 
-
 # Debug
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
-# Display
+# FM
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.hwc_set_default_colormode=true \
-    ro.vendor.display.cabl=0 \
-    vendor.display.enable_default_color_mode=1
-
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.qfp=false
-
-# Fm
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fm.transmitter=false \
     ro.vendor.fm.use_audio_session=true
 
 # FRP
@@ -116,22 +94,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GPU
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
+    debug.egl.force_msaa=1 \
     debug.enable.sglscale=1 \
+    debug.gralloc.enable_fb_ubwc=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=0 \
+    debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
+    persist.sys.sf.disable_blurs=1 \
     vendor.display.disable_rotator_split=1 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.display.perf_hint_window=50 \
     vendor.display.disable_rotator_downscale=1 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.display.enable_default_color_mode=1 \
+    vendor.display.perf_hint_window=50 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.gralloc.disable_ahardware_buffer=1 \
     ro.config.avoid_gfx_accel=true \
     ro.vendor.qti.am.reschedule_service=true \
-    debug.egl.force_msaa=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
+    ro.sf.hwc_set_default_colormode=true \
+    ro.vendor.display.cabl=2 \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
@@ -150,10 +138,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.supports_background_blur=0 \
     debug.renderengine.backend=threaded
-
-# Hardware
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.egl=adreno
 
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -181,14 +165,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bg_apps_limit=60 \
     ro.vendor.perf.scroll_opt=true
 
-# QTI
+# Qualcomm
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
 
-# RIL
+# Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.dropset_feature=0 \
     persist.vendor.ims.disableADBLogs=0 \
@@ -217,6 +201,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.radio.qcril_uim_vcc_feature=1 \
     persist.vendor.radio.relay_oprt_change=1 \
+    persist.vendor.radio.sar_sensor=1 \
     persist.vendor.radio.sw_mbn_update=1 \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.build.vendorprefix=/vendor \
@@ -228,7 +213,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.radio.sar_sensor=1 \
     ro.vendor.sensors.pmd=false \
     ro.vendor.sensors.rmd=false \
     ro.vendor.sensors.smd=false \
@@ -250,17 +234,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_empty_percent=100 \
     ro.vendor.qti.sys.fw.trim_cache_percent=100 \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
-
-# USB
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.usb.bpt=2ec1 \
-    ro.usb.bpt_adb=2ec5 \
-    ro.usb.bpteth=2ec3 \
-    ro.usb.bpteth_adb=2ec6 \
-    ro.usb.mtp=2e82 \
-    ro.usb.mtp_adb=2e76 \
-    ro.usb.ptp=2e83 \
-    ro.usb.ptp_adb=2e84
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
