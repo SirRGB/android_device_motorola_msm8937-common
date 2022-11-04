@@ -204,7 +204,8 @@ PRODUCT_COPY_FILES += \
 # MotoActions
 ifeq ($(filter %ahannah %rhannah,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
-    MotoActions
+    MotoActions \
+    MotoCommonOverlay
 endif
 
 # Net
