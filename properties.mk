@@ -61,6 +61,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=smd
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.bluetooth_audio_hal.disabled=false \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true
+
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
