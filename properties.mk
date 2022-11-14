@@ -114,6 +114,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
     ro.vendor.display.cabl=0 \
     ro.hardware.egl=adreno \
+    ro.launcher.blur.appLaunch=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
