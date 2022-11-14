@@ -104,7 +104,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.blurs_are_expensive=1
     ro.sf.hwc_set_default_colormode=true \
     ro.vendor.display.cabl=0 \
-    ro.launcher.blur.appLaunch=0
+    ro.launcher.blur.appLaunch=0 \
+    debug.cpurend.vsync=false
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
