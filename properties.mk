@@ -115,7 +115,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=0 \
     ro.hardware.egl=adreno \
     ro.launcher.blur.appLaunch=0 \
-    debug.cpurend.vsync=false
+    debug.cpurend.vsync=false \
+    debug.hwui.use_buffer_age=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
