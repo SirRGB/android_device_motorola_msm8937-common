@@ -105,7 +105,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
     ro.vendor.display.cabl=0 \
     ro.launcher.blur.appLaunch=0 \
-    debug.cpurend.vsync=false
+    debug.cpurend.vsync=false \
+    debug.hwui.use_buffer_age=false
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
