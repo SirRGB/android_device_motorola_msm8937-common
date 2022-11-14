@@ -124,7 +124,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
     ro.launcher.blur.appLaunch=0 \
-    debug.cpurend.vsync=false
+    debug.cpurend.vsync=false \
+    debug.hwui.use_buffer_age=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
