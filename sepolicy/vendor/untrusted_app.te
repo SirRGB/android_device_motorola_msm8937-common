@@ -2,3 +2,6 @@ dontaudit untrusted_app proc:file r_file_perms;
 dontaudit untrusted_app proc_tty_drivers:file { getattr open read };
 dontaudit untrusted_app qemu_hw_prop:file { getattr open read };
 dontaudit untrusted_app zygote:unix_stream_socket getopt;
+dontaudit untrusted_app serialno_prop:file { getattr open read };
+dontaudit untrusted_app_25 zygote:unix_stream_socket getopt;
+dontaudit untrusted_app_29 zygote:unix_stream_socket getopt;
