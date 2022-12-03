@@ -5,3 +5,4 @@ allow hal_camera_default sysfs_battery_supply:dir search;
 allow hal_camera_default sysfs_battery_supply:file { open read getattr };
 allow hal_camera_default bootanim_system_prop:file { getattr open read };
 allow hal_camera_default persist_debug_prop:file { getattr open read };
+allow hal_camera_default default_prop:file { getattr open read };
