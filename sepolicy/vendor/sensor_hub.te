@@ -1,0 +1,1 @@
+allow sensor_hub sensorhub_data_file:dir search;
