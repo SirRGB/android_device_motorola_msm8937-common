@@ -6,3 +6,5 @@ userdebug_or_eng(`
 
 allow rmt_storage modem_efs_partition_device:blk_file rw_file_perms;
 r_dir_file(rmt_storage, fsg_firmware_file)
+allow rmt_storage default_prop:file { getattr open read };
+allow rmt_storage radio_control_prop:file { getattr open read };
