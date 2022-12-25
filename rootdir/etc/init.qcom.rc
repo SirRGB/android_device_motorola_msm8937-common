@@ -325,6 +325,9 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_expire_centisecs 60000
     write /proc/sys/vm/dirty_writeback_centisecs 60000
 
+    # Restrict permissions to socket file to hide Magisk
+    chmod 440 /proc/net/unix
+
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
