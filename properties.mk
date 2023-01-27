@@ -198,6 +198,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.dfr_mode_set=1 \
+    persist.vendor.radio.enableadvancedscan=false \
     persist.vendor.radio.eri64_as_home=1 \
     persist.vendor.radio.flexmap_type=none \
     persist.vendor.radio.jbims=1 \
