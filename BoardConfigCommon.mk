@@ -59,9 +59,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
 
-# Encryption
-TARGET_HW_DISK_ENCRYPTION := true
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
