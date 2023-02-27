@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcutils_shim \
+    libcutils_shim.vendor \
     libgui_shim \
     libgui_shim_vendor \
     libmemset_shim \
