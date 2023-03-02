@@ -110,6 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
     debug.sf.hw=0 \
+    debug.sf.enable_planner_prediction=false \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
