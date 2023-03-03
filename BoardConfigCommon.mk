@@ -104,6 +104,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
