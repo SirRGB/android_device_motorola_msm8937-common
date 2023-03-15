@@ -232,7 +232,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SOC
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=MSM8937
 
 # Trim properties
