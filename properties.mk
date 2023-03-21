@@ -62,8 +62,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=smd
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bluetooth.bluetooth_audio_hal.disabled=false \
+    bluetooth.le.disable_apcf_extended_features=1 \
     ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.bluetooth_audio_hal.disabled=false \
     persist.bluetooth.a2dp_offload.disabled=true
 
 # Bpf bypass
