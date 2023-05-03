@@ -105,7 +105,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.enable.sglscale=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=0 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
