@@ -58,9 +58,6 @@ USE_CUSTOM_AUDIO_POLICY := 1
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
-# Boot animation
-TARGET_BOOTANIMATION_HALF_RES := true
-
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
