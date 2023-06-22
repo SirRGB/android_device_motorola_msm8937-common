@@ -206,7 +206,6 @@ vendor/lib/libgsl.so|78d9d3b7863d9f4192a1d1a74d578061f3cdf806
 vendor/lib/libhdr_tm.so|4c371d0931245a65d0b4df768de8837bbdf4832e
 vendor/lib/libllvm-glnext.so|466a83ac7d6252726daedc98a1efa01c8051efcb
 vendor/lib/libllvm-qcom.so|0f52061f018edd59559cee43230ea61ac3c67468
-vendor/lib/libmm-hdcpmgr.so|f1c3042526d2cc3a2e675ba579db0753f0ec1d69
 vendor/lib64/egl/eglSubDriverAndroid.so|0d179fb9b12b11d33c4ee99364b50e8ea8ea49f9
 vendor/lib64/egl/libEGL_adreno.so|c97c8e14d26f53398c50122daf80a599f077398a
 vendor/lib64/egl/libGLESv1_CM_adreno.so|0adf2e094afdc3476198ef8ad52101cf9004eb5d
@@ -221,7 +220,6 @@ vendor/lib64/libc2d30_bltlib.so|644a88f490cc883492d94b9f581127fb33f51415
 vendor/lib64/libgsl.so|6bf21dd299ccf887c9ef6aaced0cebb21920527e
 vendor/lib64/libhdr_tm.so|c388a9b14966583cde2c682c129fcf5cfa298239
 vendor/lib64/libllvm-glnext.so|45c691a1d466b708bdf5f56b89a24f09ffcbdba7
-vendor/lib64/libmm-hdcpmgr.so|071fc1f6d156679e819c263231aa8e0ed8fceafe
 
 # Graphics (SDM) - from X00RD - QKQ1.191002.002-17.07.2003.405-20200330
 vendor/lib/libscalar.so|7ac579768ffd2caee903d69d8fd3f7918b04ffbe
