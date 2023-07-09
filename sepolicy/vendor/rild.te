@@ -14,5 +14,5 @@ allow rild persist_file:file rw_file_perms;
 
 allow rild vendor_file:file execute_no_trans;
 
-# set_prop(rild, system_radio_prop)
+set_prop(rild, system_radio_prop)
 set_prop(rild, vendor_default_prop)
