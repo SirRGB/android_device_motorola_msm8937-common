@@ -5285,6 +5285,9 @@ misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
 
+# Tune task scheduler to prefer idle cpus to place task
+sysctl -w kernel.sched_prefer_idle=1
+
 # Tune task scheduler to reduce possibility to pick some heavy task
 # to the same cpu with ui-threads
 sysctl -w kernel.sched_spill_load=85
