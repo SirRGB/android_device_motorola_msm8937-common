@@ -11,4 +11,6 @@ allow ueventd debugfs:dir { relabelfrom };
 allow ueventd debugfs_wakeup_sources:file { open read getattr };
 allow ueventd self:capability kill;
 
+userdebug_or_eng(`
 allow ueventd qti_debugfs:dir { relabelto };
+')
