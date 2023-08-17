@@ -139,8 +139,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=0 \
     debug.renderengine.backend=threaded \
     debug.sf.predict_hwc_composition_strategy=0 \
-    debug.sf.enable_transaction_tracing=false \
-    ro.hwui.render_ahead=1
+    debug.sf.enable_transaction_tracing=false
 
 # Hardware
 PRODUCT_PROPERTY_OVERRIDES += \
