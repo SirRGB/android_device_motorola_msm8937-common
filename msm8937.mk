@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson.vendor \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libwui
 
 PRODUCT_PACKAGES += \
