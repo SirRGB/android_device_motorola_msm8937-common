@@ -63,6 +63,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=smd
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.core.le.vendor_capabilities.enabled=false \
     bluetooth.le.disable_apcf_extended_features=1 \
     ro.bluetooth.a2dp_offload.supported=false \
     persist.bluetooth.bluetooth_audio_hal.disabled=false \
