@@ -290,12 +290,6 @@
         <item>34</item>
     </integer-array>
 
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>0</item>
-        <item>25</item>
-    </integer-array>
-
     <!-- Disable rounded corners -->
     <dimen name="config_dialogCornerRadius">0.0dip</dimen>
     <dimen name="config_buttonCornerRadius">0.0dip</dimen>
