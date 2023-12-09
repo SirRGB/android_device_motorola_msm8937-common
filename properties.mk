@@ -128,7 +128,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=0 \
     ro.hardware.egl=adreno \
     ro.launcher.blur.appLaunch=0 \
-    debug.cpurend.vsync=false
+    debug.cpurend.vsync=false \
+    ro.surface_flinger.enable_frame_rate_override=false
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
