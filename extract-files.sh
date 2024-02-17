@@ -71,6 +71,10 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libcutils_shim.so" "${LIBCUTILS_SHIM}"
             done
             ;;
+
+        vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
     esac
 }
 
