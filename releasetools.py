@@ -15,10 +15,6 @@
 import common
 import re
 
-def OTA_Assertions(info):
-  # Disable VINTF checks
-  common.OPTIONS.skip_compatibility_check = True
-
 def AddBasebandAssertion(info):
   android_info = info.input_zip.read("OTA/android-info.txt")
   m = re.search(r'require\s+version-baseband\s*=\s*(\S+)', android_info.decode('utf-8'))
@@ -30,11 +26,9 @@ def AddBasebandAssertion(info):
   return
 
 def FullOTA_Assertions(info):
-  OTA_Assertions(info)
   AddBasebandAssertion(info)
   return
 
 def IncrementalOTA_Assertions(info):
-  OTA_Assertions(info)
   AddBasebandAssertion(info)
   return
