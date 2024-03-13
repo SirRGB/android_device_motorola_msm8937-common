@@ -7,9 +7,6 @@ value:2902
 [AID_VENDOR_RFS]
 value:2903
 
-[AID_VENDOR_RFS_SHARED]
-value:2904
-
 [AID_VENDOR_QCOM_DIAG]
 value:2950
 
