@@ -393,7 +393,7 @@ vendor/lib64/libqti-util.so|4911109f327c4bf9d1d34acc14082f78e69b4ccb
 vendor/lib64/libqti-utils.so|c74e0e5c650ecb9a0bb8e6fd7d95fc1e521597f6
 vendor/lib64/libperfconfig.so|c2929d897e116a0f775213e5ddfb785b313d8fd5
 
-# Peripheral manager
+# Peripheral manager - from FP3 - 13 6.A.023.1-gms-497e9bef-user
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
