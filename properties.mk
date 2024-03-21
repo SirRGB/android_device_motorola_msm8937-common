@@ -139,8 +139,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.supports_background_blur=0 \
-    debug.renderengine.backend=threaded
+    ro.surface_flinger.supports_background_blur=0
 
 # Hardware
 PRODUCT_PROPERTY_OVERRIDES += \
