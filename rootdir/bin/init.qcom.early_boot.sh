@@ -256,6 +256,7 @@ case "$target" in
         case "$soc_hwid" in
             294|295|296|297|298|313|353|354|363|364)
                 setprop vendor.opengles.version 196610
+                setprop ro.hardware.egl adreno
                 if [ $soc_hwid = 354 ]
                 then
                     setprop vendor.media.target.version 1
