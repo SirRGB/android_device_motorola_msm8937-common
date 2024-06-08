@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.msm8937 \
+    audio.primary.$(TARGET_BOARD_PLATFORM) \
     audio.r_submix.default \
     audio.usb.default \
     libqcompostprocbundle \
