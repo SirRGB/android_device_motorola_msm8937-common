@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     libdisplayconfig \
+    libion.vendor \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
@@ -151,6 +152,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -323,6 +325,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     librmnetctl \
     libsensorndkbridge \
+    libsqlite.vendor \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
