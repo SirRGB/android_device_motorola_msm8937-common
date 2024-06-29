@@ -8,4 +8,3 @@ get_prop(system_server, exported_camera_prop)
 get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 allow system_server sysfs:dir { open read };
-allow system_server sysfs_livedisplay_tuneable:file { open read getattr };

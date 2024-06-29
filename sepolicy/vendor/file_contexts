@@ -23,6 +23,7 @@
 
 # Fsg
 /(vendor|system/vendor)/fsg                              u:object_r:fsg_firmware_file:s0
+/mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin  
 
 # Health
 /sys/devices/soc/soc:qcom,bcl/power_supply/bcl/type u:object_r:sysfs_healthd:s0
