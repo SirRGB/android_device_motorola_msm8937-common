@@ -1,5 +1,0 @@
-dontaudit crash_dump hwservicemanager_prop:file { getattr open };
-dontaudit crash_dump vendor_dataqdp_prop:file { getattr open };
-dontaudit crash_dump vendor_default_prop:file { getattr open };
-dontaudit crash_dump vendor_radio_prop:file { getattr open };
-dontaudit crash_dump vendor_rild_libpath_prop:file { getattr open };
