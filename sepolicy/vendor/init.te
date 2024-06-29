@@ -12,4 +12,3 @@ allow init ion_device:chr_file { read open ioctl };
 
 allow init system_server:binder { transfer call };
 allow init sysfs:dir create;
-allow init sysfs:file setattr;
