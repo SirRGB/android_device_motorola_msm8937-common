@@ -1,4 +1,4 @@
-allow vendor_toolbox {
-    persist_chargeonly_file
-    persist_hvdcp_file
-}:file { r_file_perms setattr };
+#allow vendor_toolbox {
+#    persist_chargeonly_file
+#    persist_hvdcp_file
+#}:file { r_file_perms setattr };

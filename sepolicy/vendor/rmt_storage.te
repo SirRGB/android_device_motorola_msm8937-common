@@ -12,4 +12,4 @@ allow rmt_storage sysfs:file { open read };
 get_prop(rmt_storage, radio_control_prop)
 get_prop(rmt_storage, vendor_radio_prop)
 
-get_prop(rmt_storage, hwrev_prop)
+#get_prop(rmt_storage, hwrev_prop)
