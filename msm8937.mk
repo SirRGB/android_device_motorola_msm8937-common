@@ -6,9 +6,6 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Platform
-TARGET_BOARD_PLATFORM ?= msm8937
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/msm8937-common/msm8937-common-vendor.mk)
 
@@ -36,7 +33,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.$(TARGET_BOARD_PLATFORM) \
+    audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
     libqcompostprocbundle \
@@ -93,13 +90,13 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    gralloc.$(TARGET_BOARD_PLATFORM) \
-    hwcomposer.$(TARGET_BOARD_PLATFORM) \
+    gralloc.msm8937 \
+    hwcomposer.msm8937 \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.$(TARGET_BOARD_PLATFORM)
+    memtrack.msm8937
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \

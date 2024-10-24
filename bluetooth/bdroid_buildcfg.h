@@ -36,7 +36,6 @@ typedef struct {
 } device_t;
 
 static const device_t devices[] = {
-    {"addison", "moto z play"},
     {"ahannah", "moto e5 plus"},
     {"cedric", "moto g5"},
     {"hannah", "moto e5 plus"},
